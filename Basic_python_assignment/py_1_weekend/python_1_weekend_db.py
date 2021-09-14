@@ -79,7 +79,7 @@ try:
     
     update_age2 = '''update py_weekend.users set Age = '30' where py_weekend.users.id = 3'''
     cursor.execute(update_age2)
-    
+    connection.commit()
 except Exception as e:
     print("A error has occured :", e)
     
